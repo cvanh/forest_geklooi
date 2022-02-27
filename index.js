@@ -11,7 +11,7 @@ const requestListener = function (req, res) {
         })    
     } else{
         res.writeHead(200);
-        res.end("there is a error did you type everything corectly");
+        res.end(process.env);
     }
 }
 
