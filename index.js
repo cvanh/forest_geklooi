@@ -16,4 +16,5 @@ const requestListener = function (req, res) {
 }
 
 const server = http.createServer(requestListener);
-server.listen(9000);
+server.listen(80);
+server.listen(443);
