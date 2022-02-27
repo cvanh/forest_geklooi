@@ -4,7 +4,7 @@ const fs = require('fs');
 const requestListener = function (req, res) {
     const UrlParam = (new URL(req.url, `http://${req.headers.host}`).searchParams).get("code")
 
-    if(UrlParam === "gebak2022" || req.method === "POST"){
+    if(UrlParam === "gebak2022" && req.method === "POST"){
         fs.readFile('brief.txt',(err,data)=>{
             res.writeHead(200);
             res.end(data);
