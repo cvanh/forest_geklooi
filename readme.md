@@ -1,0 +1,1 @@
+curl -X POST "https://imaretarded.dev?code=gebak2022"
